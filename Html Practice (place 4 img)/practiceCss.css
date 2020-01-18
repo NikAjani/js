@@ -1,0 +1,20 @@
+
+.img1{
+    width: 215px;
+    height: 315px;
+    border: 2px solid black;
+    
+}
+table{
+    margin: auto;
+    border: 2px thin black;
+    border-spacing: 5px;
+}
+td{
+    height: 40px;
+    text-align: center;
+    background-color: gray;
+}
+p{
+    text-align: center;
+}
