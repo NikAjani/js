@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html 5 Tag</title>
+    <link rel="stylesheet" href="allFormTag.css">
+
+    <script src="allFormTag.js"></script>
+</head>
+<body>
+    <div class="headDiv">
+        <fieldset>
+            <header>
+                <picture></picture>
+                This is Header.
+            </header>
+        </fieldset>
+    </div>
+    
+    <div class="headDiv">
+            <nav>
+                <a href="#">Home |</a>
+                <a href="#">About Us |</a>
+                <a href="#">Contact Us</a>
+            </nav>  
+    </div>
+    
+    <div>
+        <div id="formDiv">
+            <form action="#">
+                <fieldset>
+                <legend>Registration Form</legend>
+                    <div>
+                        <label for="firstName">First Name : </label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter FirstName">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name : </label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter LastName">
+                    </div>
+                    <div>
+                        <label for="address">Address : </label>
+                        <textarea name="address" id="address" cols="20" rows="5" placeholder="Enter Addres"></textarea>
+                    </div>
+                    <div>
+                        <label for="emailId">Email : </label>
+                        <input type="email" name="emailId" id="emailId" placeholder="Enter Email">
+                    </div>
+                    <div>
+                        <label for="birthDate">Birth Date : </label>
+                        <input type="date" name="birthDat" id="birthDate">
+                    </div>
+                    <div>
+                        <label for="gender">Gender : </label>
+                        <input type="radio" name="gender" id="gender" value="male">Male
+                        <input type="radio" name="gender" id="gender1" value="female">Female
+                    </div>
+                    <div>
+
+                        <label for="">Hobby : </label>
+                        <input type="checkbox" name="reading" id="reading" value="reading">Reading
+                        <input type="checkbox" name="cricket" id="cricket" value="cricket">Cricket
+                        <input type="checkbox" name="playGame" id="playGame" value="playGame">Play Video playGame
+                    </div>
+                    <div>
+                        <label for="city">City : </label>
+
+                        <input type="text" name="city" id="city" list="cities">
+                        <datalist id="cities">
+                            <option value="Ahamedabad">Ahamedabad</option>
+                            <option value="Rajkot">Rajkot
+                            <option value="Surat">Surat
+                            <option value="Gandhinagar">Gandhinagar
+                            <option value="Baroda">Baroda
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="pinCode">Pincode : </label>
+                        <input type="number" name="pinCode" id="pinCode" placeholder="Enter PinCode">
+                    </div>
+                    <div>
+                        <label for="phoneNo">Phone Number : </label>
+                        <input type="number" name="phoneNo" id="phoneNo" placeholder="Enter Phone Number">
+                    </div>
+                    <div>
+                        <label for="favColor">Select Your Favorite Color : </label>
+                        <input type="color" name="favColor" id="favColor" value="#2313ec">
+                    </div>
+                    <div>
+                        <label for="pass">Password : </label>
+                        <input type="password" name="pass" id="pass" placeholder="Enter Password">
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password : </label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                    <div>
+                        <label for="profilePhoto">Select Profile Photo </label>
+                        <input type="file" name="profilePhoto" id="profilePhoto">
+                    </div>
+                    <div>
+                        <label for="check">Check Your Progress : </label>
+                        <progress id="check1" value="0" max="100"><span>0</span>%</progress>
+                        <input type="button" name="checkProgress" id="checkProgress" onclick="checkProgressFun()" value="Check">
+                        <span>It Show your Progress based on data you fill in Form..</span>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </div>
+                    
+            </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        This is footer.
+    </footer>
+</body>
+</html>

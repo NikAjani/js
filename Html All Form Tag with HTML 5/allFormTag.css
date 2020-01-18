@@ -1,0 +1,31 @@
+nav{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+footer{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#formDiv{
+    margin-top: 30px;
+}
+.headDiv{
+    margin-top: 20px;
+}

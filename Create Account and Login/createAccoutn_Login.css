@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+.divLeft{
+    float: left;
+    width: 50%;
+}
+.divRight{
+    float: right;
+    width: 50%;
+}
