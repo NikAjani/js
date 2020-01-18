@@ -1,0 +1,66 @@
+img{
+    height: 100px;
+    width: 460px;
+}
+/* input{
+    width: 450px;
+    height: 30px;
+    margin-top: 10px;
+} */
+textarea{
+    width: 450px;
+    /* height: 50px; */
+    margin-top: 10px;
+}
+.container{
+    position: relative;
+    margin-left: 420px;
+    color: white;
+    width: 450px;
+}
+.topLeft{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.button {
+    border: none;
+    color: white;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button-green{
+    background-color: #4CAF50;;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: white;
+    color: black;
+    min-width: 10px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border: 2px solid dodgerblue;
+  }

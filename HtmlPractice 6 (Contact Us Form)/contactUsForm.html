@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Practice 6 09-01-2020</title>
+    <link rel="stylesheet" href="contactUsFormCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+        <div><img src="contactus.png" alt="" srcset=""></div>
+        <div class="topLeft">Contact Us</div>
+        <div>
+            <form action=""></form>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" name="fullName" id="fullName" placeholder="Full Name">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" name="emailId" id="emailId" placeholder="Eg. example@gmail.com">
+            </div>
+            <div class="input-container">
+                <i class="fa fa-phone icon"></i>
+                <input class="input-field"  type="text" name="phoneNo" id="phoneNo" placeholder="Eg. +91 00000 00000">
+            </div>
+            <div class="input-container">
+                <textarea name="comment" id="comment" cols="22" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="button" class="button button-green" onclick="onClickCheck()" id="sendNow" value="Send Now">
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
