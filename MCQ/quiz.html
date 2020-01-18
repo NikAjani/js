@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSCoding 2</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <form action="#">
+                    <span>What is the longest that an elephant has lived?</span><br><br>
+                    <input type="radio" name="question1" value="86">86
+                    <input type="radio" name="question1" value="57">57
+                    <input type="radio" name="question1" value="87">87
+                    <input type="radio" name="question1" value="77">77
+                    <hr>
+                    <br>
+                    <span>How many rings are on the Olympic flag?</span><br><br>
+                    <input type="radio" name="question2" value="7">7
+                    <input type="radio" name="question2" value="4">4
+                    <input type="radio" name="question2" value="5">5
+                    <input type="radio" name="question2" value="3">3
+                    <hr>
+                    <br>
+                    <span>What is a tarsier?</span><br><br>
+                    <input type="radio" name="question3" value="Primate">Primate
+                    <input type="radio" name="question3" value="Rodent">Rodent
+                    <input type="radio" name="question3" value="Lizard">Lizard
+                    <input type="radio" name="question3" value="Bird">Bird
+                    <hr>
+                    <br>
+                    <span>Which of these animals does NOT appear in the Chinese zodiac?</span><br><br>
+                    <input type="radio" name="question4" value="Dog">Dog
+                    <input type="radio" name="question4" value="Bear">Bear
+                    <input type="radio" name="question4" value="Dragon">Dragon
+                    <input type="radio" name="question4" value="Rabbit">Rabbit
+                    <hr>
+                    <br>
+                    <span>What is the name of this symbol: ¶</span><br><br>
+                    <input type="radio" name="question5" value="Interrobang">Interrobang
+                    <input type="radio" name="question5" value="Biltong">Biltong
+                    <input type="radio" name="question5" value="Fermata">Fermata
+                    <input type="radio" name="question5" value="Pilcrow">Pilcrow
+                    <hr>
+                    <input type="button" value="Submit" onclick="validAns()">
+                </form>
+            </div>
+                
+            <div>
+                <br><br><span><b>Your Score : </b></span>
+                <span id="score"></span>
+            </div>
+        </div>
+        <script>
+			  
+				var ans = new Array('86','5','Primate','Bear','Pilcrow');
+				var mark=0;
+				function validAns(){
+
+					for(var j=0;j<ans.length+1;j++){
+						//var query = 'question'+[j+1]; 
+						//console.log(query);
+							   
+						var subAns = document.getElementsByName('question'+[j+1]);
+
+						for(var i=0;i<subAns.length;i++){
+							if(subAns[i].checked){
+								if(subAns[i].value==ans[j]){
+									//console.log(subAns[i].value);
+									mark ++;
+									//console.log(mark);
+								}       
+							}
+						}
+					}
+					
+					document.getElementById("score").innerHTML = mark;
+					
+				}
+		</script>
+    </body>
+</html>
