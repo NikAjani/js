@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Practice 10-01-2020</title>
+    
+</head>
+<body>
+    <div>
+
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Your Address</legend>
+                    <div><label for="">First Name</label></div>
+                    <div><input type="text" name="firstName" id="firstName"></div>
+                    <div><label for="">Last Name</label></div>
+                    <div><input type="text" name="lastName" id="lastName"></div>
+                    <div><label for="">Street</label></div>
+                    <div><input type="text" name="street" id="street"></div>
+                    <div><Label>City</Label></div>
+                    <div>
+                        <input type="text" name="city" id="city" list="cities">
+                        <datalist id="cities">
+                            <option value="Ahamedabad">Ahamedabad</option>
+                            <option value="Rajkot">Rajkot
+                            <option value="Surat">Surat
+                            <option value="Gandhinagar">Gandhinagar
+                            <option value="Baroda">Baroda
+                        </datalist></div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Additional Detail</legend>
+                    <div><label for="">Biography</label></div>
+                    <div><textarea name="bio" id="bio" cols="22" rows="3"></textarea></div>
+                    <div><label for="">Image</label></div>
+                    <div><input type="file" name="img" id="img"></div>
+                    <div><label for="">Age Group</label></div>
+                    <div>
+                        <select name="ageGroup" id="ageGroup">
+                            <option value="0-9">0 to 9 years</option>
+                            <option value="10-19">10 to 19 years</option>
+                            <option value="20-29">20 to 29 years</option>
+                            <option value="30-39">30 to 39 years</option>
+                            <option value="40-49">40 to 49 years</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Interest</legend>
+                    <div>Hobbies</div>
+                    <div>
+						<select name="hobby" size="4">
+							<option value="Soccer">Playing Soccer</option>
+							<option value="Dancing">Dancing</option>
+							<option value="Gardening">Gardening</option>
+							<option value="movie">Watching Movie</option>
+						</select>
+                    </div>
+                    <div><label for="">Favourite car</label></div>
+                    <div>
+                        <select name="favCar" id="favCar">
+                            <option value="volvo">Volvo</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Farari">Farari</option>
+                        </select>
+                    </div>
+					<div>
+						<label>Favourite Public Transport?</label>
+					</div>
+					<div>
+						<select name="tanasport" size="4">
+							<optgroup label="Ground">
+								<option value="train">Train</option>
+								<option value="bus">Bus</option>
+							</optgroup>
+							<optgroup label="Water">
+								<option value="boat">Boat</option>
+							</optgroup>
+							<optgroup label="Air">
+								<option value="Jet">Jet</option>
+							</optgroup>
+						</select>
+					</div>
+                </fieldset>
+            </div>
+            <div>
+                <input type="button" value="Submit" onclick="validAll()">
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
