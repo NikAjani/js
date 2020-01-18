@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="pigGameCss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftDiv">
+            <div class="player-name" id="player-0">Player 1</div>
+            <div class="player-score" id="score-0">0</div>
+            <div class="current-score" id="current-0">0</div>
+        </div>
+        <div class="centerDiv">
+            <div class="player-name" id="player-1">Player 2</div>
+            <div class="player-score" id="score-1">0</div>
+            <div class="current-score" id="current-1">0</div>
+        </div>
+        <div class="rightDiv">
+            <div><input type="button" id="newGame" value="Start New Game"></div>
+            <div><img src="dice-5.png" id="diceImg" alt="Dice" ></div>
+            <div>
+                <input type="button" id="rollDice" value="Roll Dice">
+                <input type="button" id="hold" value="Hold">
+            </div>
+        </div>
+    </div>
+    <div>
+        <span id="winner"></span>
+    </div>
+    <script src="pigGame.js"></script>
+</body>
+</html>

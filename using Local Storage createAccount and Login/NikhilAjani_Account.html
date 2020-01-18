@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account and Login 06-04-2020</title>
+    <link rel="stylesheet" href="NikhilAjani_Account.css">
+</head>
+<body>
+    <div class="container">
+        <div class="divLeft">
+            <fieldset>
+                <form action="" name="Login">
+                    <div>
+                        <label for="">Email : </label>
+                        <input type="text" name="loginEmail" id="loginEmail">
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="">Password : </label>
+                        <input type="password" name="loginPassword" id="loginPassword">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="button" value="Login" onclick="checkLogin()">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        <div class="divRight">
+            <fieldset>
+                <form action="" name="createAccount">
+                    <div>
+                        <label for="">First Name : </label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <br>
+                    <div>
+    
+                        <label for="">Last Name : </label>
+                        <input type="text" name="lastName" id="lastName">
+                    </div>
+                    <br>
+                    <div>
+    
+                        <label for="">Email : </label>
+                        <input type="email" name="emailId" id="emailId">
+                    </div>
+                    <br>
+                    <div>
+    
+                        <label for="">Phone Number : </label>
+                        <input type="number" name="phoneNo" id="phoneNo">
+                    </div>
+                    <br>
+                    <div>
+    
+                        <label for="">Password : </label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+                    <br>
+                    <div>
+    
+                        <label for="">Confirm Password : </label>
+                        <input type="password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="button" value="Create Account" onclick="createNewUser()">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <div>
+        <div>
+            <p><strong>User Data</strong></p>
+        </div>
+        <div name='printUserData' id="printUserData">
+
+        </div>
+    </div>
+    <script src="NikhilAjani_Account.js"></script>
+</body>
+</html>
