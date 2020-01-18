@@ -1,0 +1,12 @@
+img{
+    height: 100px;
+    width: 100px;
+}
+table{
+    margin: auto;
+    /* text-align: center; */
+}
+.hobby{
+    text-decoration: underline;
+    color: blue;
+}
